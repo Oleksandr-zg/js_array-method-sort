@@ -11,10 +11,6 @@ function applyCustomSort() {
       compares = compareFunction;
     } else {
       compares = (a, b) => {
-        if (typeof a === 'number' && typeof b === 'number') {
-          return String(a).localeCompare(String(b));
-        }
-
         if (String(a) < String(b)) {
           return -1;
         }
